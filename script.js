@@ -116,7 +116,7 @@ ctx.fillStyle = "hsl(256, 85%, 44%)";
   document.getElementById('currentScore').innerHTML = `Score : ${currentScore}`;
 
 // tell the browser to perform anim
-    requestAnimationFrame(render);
+    window.requestAnimationFrame(render);
 }
 
 // lauch setup 
@@ -125,4 +125,4 @@ img.onload = render;
 
 //start game
 document.addEventListener('click', () => gamePlaying = true);
-ctx.onclick = () => flight = jump;
+window.onclick = () => flight = jump;
